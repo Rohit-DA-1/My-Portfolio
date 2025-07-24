@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Rohit Yadav</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://as2.ftcdn.net/v2/jpg/05/72/11/85/1000_F_572118511_HyEViU9WhYmR2XIhpDYnB8Lm3oSCiBTO.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    /* Dark overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: -1;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+    }
+
+    header h1 {
+      font-size: 20px;
+      color: #00ffcc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: #00ffcc;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-info h3 {
+      color: #00ffcc;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+
+    .contact-info p a {
+      color: #00ffe1;
+      text-decoration: none;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 300px;
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,255,204,0.2);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 6px;
+      background: #1a1a1a;
+      color: #ffffff;
+      font-size: 15px;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #bbb;
+    }
+
+    .contact-form button {
+      width: 100%;
+      background: #00ffcc;
+      color: #000;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .contact-form button:hover {
+      background: #00cfc9;
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="entry.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="certificate.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p><strong>Email:</strong> ry809509@gmail.com</p>
+        <p><strong>City:</strong> Ulhasnagar, Maharashtra</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Rohit-DA-1" target="_blank">Rohit-DA-1</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohit-yadav-03babb232" target="_blank">rohit-yadav</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <form action="https://formsubmit.co/ry809509@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | Rohit Yadav</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      overflow: hidden;
+    }
+    body {
+      background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+      color: #fff;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 22px;
+      color: #00ffe1;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #00ffe1;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #fff;
+    }
+
+    .social-fixed {
+      position: absolute;
+      top: 80px;
+      right: 40px;
+      z-index: 10;
+    }
+
+    .social-fixed a {
+      margin-right: 10px;
+    }
+
+    .social-fixed img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-fixed img:hover {
+      transform: scale(1.2);
+    }
+
+    .entry-container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 80px 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .left-image img {
+      width: 280px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,225,0.5);
+    }
+
+    .content {
+      max-width: 60%;
+      text-align: left;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .content h2 {
+      font-size: 1.6rem;
+      font-style: italic;
+      color: #00ffe1;
+    }
+
+    .short-desc {
+      max-width: 600px;
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .enter-btn {
+      margin-top: 40px;
+      padding: 15px 30px;
+      background-color: #00ffe1;
+      color: #000;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 0 15px #00ffe1;
+      transition: all 0.3s ease;
+    }
+
+    .enter-btn:hover {
+      background-color: #00cfc9;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffe1;
+    }
+
+    @media (max-width: 768px) {
+      .entry-container {
+        flex-direction: column;
+        padding: 120px 20px 40px;
+        text-align: center;
+      }
+
+      .left-image img {
+        width: 180px;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .social-fixed {
+        top: 110px;
+        right: 20px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>Rohit Yadav</h1>
+    <nav>
+      <ul>
+        <li><a href="entry.html">Home</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="certificate.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Social icons in top-right corner -->
+  <div class="social-fixed">
+    <a href="https://github.com/Rohit-DA-1" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+    <a href="https://www.linkedin.com/in/rohit-yadav-03babb232" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+  </div>
+
+  <!-- Entry Section -->
+  <div class="entry-container">
+    <div class="left-image">
+      <img src="https://i.ibb.co/fVLKcjZv/DP.jpg" alt="Rohit Yadav">
+    </div>
+    <div class="content">
+      <h1>Rohit Yadav</h1>
+      <h2>Data Analyst | Tech Enthusiast</h2>
+      <p class="short-desc">Transforming raw data into clear, actionable insights using Power BI, SQL, Python & Excel.</p>
+      <a href="project.html"><button class="enter-btn">Enter Portfolio</button></a>
+    </div>
+  </div>
+
+  <!-- Particle JS -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 70 },
+        "color": { "value": "#00ffe1" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00ffe1",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+
+</body>
+</html>

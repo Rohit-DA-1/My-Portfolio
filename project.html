@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Rohit Yadav</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://as2.ftcdn.net/v2/jpg/05/72/11/85/1000_F_572118511_HyEViU9WhYmR2XIhpDYnB8Lm3oSCiBTO.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+    header a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .projects {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .projects h2 {
+      font-size: 36px;
+      color: #00ffcc;
+      margin-bottom: 40px;
+    }
+    .project-card {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: row;
+      gap: 20px;
+      max-width: 1000px;
+      box-shadow: 0 8px 20px rgba(0,255,204,0.2);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card:nth-child(odd) {
+      flex-direction: row;
+    }
+    .project-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .project-card img {
+      width: 300px;
+      border-radius: 8px;
+    }
+    .project-card div {
+      max-width: 600px;
+      text-align: left;
+    }
+    .project-card h3 a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    .project-card p {
+      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+      white-space: normal;
+      border-right: 2px solid #00ffcc;
+      overflow: hidden;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #00ffcc; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="entry.html">Home</a>
+  <a href="project.html">Projects</a>
+  <a href="certificate.html">Certificates</a>
+  <a href="contact.html">Contact</a>
+</header>
+
+<section id="projects" class="projects">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <img src="https://static.vecteezy.com/system/resources/previews/009/276/788/large_2x/sql-structured-query-language-code-on-computer-monitor-and-server-room-background-example-of-sql-code-to-query-data-from-a-database-photo.jpg" alt="SQL Project Image">
+    <div>
+      <h3><a href="https://github.com/Rohit-DA-1/SQL-PROJECT" target="_blank">Hospitality Analysis using SQL</a></h3>
+      <p>Performed data cleaning, aggregation, and complex queries to derive insights from hospital management database.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://i.ibb.co/kj2vw94/image.png" alt="Excel Project Image">
+    <div>
+      <h3><a href="https://github.com/Rohit-DA-1/sales-Analysis-using-Excel" target="_blank">Sales Analysis using Excel</a></h3>
+      <p>Analyzed sales performance using pivot tables, charts, and Excel formulas for dynamic reporting.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://i.ibb.co/0J9bMsX/HEALTHCARE-DASHBOARD.png" alt="Power BI Project Image">
+    <div>
+      <h3><a href="https://github.com/Rohit-DA-1/POWER-BI-PROJECT" target="_blank">Interactive Dashboard using Power BI</a></h3>
+      <p>Created a real-time interactive dashboard for business performance monitoring using Power BI.</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="https://i.ibb.co/hRMxzcqH/Screenshot-2025-07-22-211048.png" alt="Pizza Sales Project">
+    <div>
+      <h3><a href="https://github.com/Rohit-DA-1/PIZZA-SALES-MANAGMENT" target="_blank">Pizza Sales Management</a></h3>
+      <p>Analyzed pizza sales data to extract trends, visualize top-selling items, and optimize business strategies.</p>
+    </div>
+  </div>
+
+</section>
+</body>
+</html>
