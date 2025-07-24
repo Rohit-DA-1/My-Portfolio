@@ -15,7 +15,6 @@
       color: #ffffff;
     }
 
-    /* Dark overlay */
     body::before {
       content: "";
       position: fixed;
@@ -179,8 +178,14 @@
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohit-yadav-03babb232" target="_blank">rohit-yadav</a></p>
       </div>
 
-      <!-- Contact Form -->
+      <!-- ✅ Updated Contact Form -->
       <form action="https://formsubmit.co/ry809509@gmail.com" method="POST" class="contact-form">
+        <!-- Required Hidden Inputs -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- ✅ FIXED: Redirect back to live site -->
+        <input type="hidden" name="_next" value="https://rohit-da-1.github.io/contact.html">
+
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
